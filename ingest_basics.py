@@ -7,6 +7,8 @@ import numpy as np
 ssv = np.array([float(f) for f in file('space_del_data.txt').read().split()])
 #Comma separated
 csv = np.array([float(f) for f in file('csv_data.txt').read().split(",")])
+#Cleaner ^ reads in line by line
+data = [line.strip() for line in open('data.lst')]
 
 
 '''ingesting wav file'''
